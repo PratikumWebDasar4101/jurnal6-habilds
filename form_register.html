@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		input[type=text], input[type=password], select, textarea {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<form action="register.php" method="post">
+		<table>
+			<tr>
+				<td>Username</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+			</tr>
+			<tr>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>NIM</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="nim"></td>
+			</tr>
+			<tr>
+				<td>Kelas</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="kelas" value="1">01
+					<input type="radio" name="kelas" value="2">02
+					<input type="radio" name="kelas" value="3">03
+					<input type="radio" name="kelas" value="4">04
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="jk" value="laki-laki">Laki-laki
+					<input type="radio" name="jk" value="perempuan">Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td>Hobi</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="hobi[]" value="Olahraga">Olahraga<br>
+					<input type="checkbox" name="hobi[]" value="Membaca">Membaca<br>
+					<input type="checkbox" name="hobi[]" value="Menulis">Menulis<br>
+					<input type="checkbox" name="hobi[]" value="Bercerita">Bercerita<br>
+					<input type="checkbox" name="hobi[]" value="Berkomedi">Berkomedi<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Fakultas</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="fak">
+						<option value="Ilmu Terapan">Ilmu Terapan</option>
+						<option value="Informatika">Informatika</option>
+						<option value="Teknik Elektro">Teknik Elektro</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+			</tr>
+			<tr>
+				<td><textarea name="alamat" id="" cols="20" rows="1"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Kirim"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
